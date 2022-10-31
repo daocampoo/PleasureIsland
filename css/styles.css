@@ -1,0 +1,167 @@
+/* Global Elements */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before,*:after {
+    box-sizing: inherit;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header & Navigation Elements */
+h1, h2, h3, h4, h5 { 
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.navigation, .navigation a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #539dc4;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Hamburger Menu */
+input#mobile-menu {
+    display: none;
+}
+
+input#mobile-menu:checked + #mobile-nav {
+    left: 0px;
+}
+
+input#mobile-menu:checked + #mobile-nav label {
+    background: #539dc4 url(../images/favicons/menu_close.svg) no-repeat center center;
+}
+
+#mobile-nav {
+    width: 160px;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: -160px;
+    transition: left .6s ease-in-out;
+}
+
+#mobile-nav a {
+    color: #539dc4;
+    display: block;
+    margin: 0;
+    padding: 2em 0;
+}
+
+#mobile-nav a:first-of-type {
+    border-top: none;
+}
+
+#mobile-nav label {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: -60px;
+    width: 42px;
+    height: 42px;
+    background-size: 22px auto;
+    background: #539dc4 url(../images/favicons/menu_open.svg) no-repeat center center;
+}
+
+/* Home Styles */
+#home-grid {
+    display: block;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section-head {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.box {
+    background-color: #334475;
+    color: #fff;
+    margin: 1em;
+    padding: 1em;
+}
+
+#food {
+    background-color: #334475;
+    color: #fff;
+}
+
+#events-list li {
+    margin: 1em;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Images and Hero Section */
+#logo {
+    max-width: 100%;
+    width: 10em;
+    display: block;
+    margin: 2em auto 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em;
+    text-align: center;
+}
+
+.hero-image {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+/* Mobile Viewport */
+#desktop-nav {
+    display: none;
+}
+
+.wrapper {
+    padding: 1em 8em;
+}
+
+footer {
+    background-color: #539dc4;
+    color: #fff;
+    padding: 1em 2em;
+    font-size: 12px;
+}
